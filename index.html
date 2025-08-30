@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Chewy&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <title>WELCOME!! ★</title>
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <style>
+      body {
+        background-image: url("yellow.jpg");
+        background-size: 700px;
+        background-repeat: repeat;
+        backdrop-filter: hue-rotate(142deg);
+        margin: 0 auto;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        animation: scrollBackground 20s linear infinite;
+      }
+
+      body:hover {
+        cursor: url("Rainbow.cur"), auto;
+      }
+
+      #holder {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        flex-direction: column
+      }
+
+      #content {
+        width: 500px;
+        height: 565px;
+        background-color: hotpink;
+        border-radius: 75px;
+        box-shadow: 0px 0px 19px 7px #6c6db0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        border: dotted yellow 4px;
+        z-index: 2;
+        position: relative;
+      }
+
+      #icon {
+        width: 150px;
+        height: 150px;
+        background-color: white;
+        border-radius: 50%;
+        background-image: url("pfpFlt.png");
+        background-size: contain;
+        border: solid white;
+        margin-bottom: 1%;
+        z-index: 1;
+        animation: float 6s ease-in-out infinite;
+      }
+
+      #quag {
+        position: fixed;
+        bottom: 10px;
+        right: 80px;
+      }
+
+      #textbox {
+        width: 200px;
+        background-color: white;
+        border-radius: 12px;
+        z-index: 3;
+        margin: 1%;
+        z-index: 2;
+      }
+
+      .chewy {
+        font-family: "Chewy", system-ui;
+        font-weight: 400;
+        font-style: normal;
+      }
+
+      .sjButton {
+        height: 35px;
+        border-radius: 7px;
+        border: none;
+        background-color: yellow;
+        border: double;
+      }
+      }
+
+      #sjButtons {
+        width: 43.4%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        height: 85px;
+      }
+
+      #greeting {
+        text-align: center;
+      }
+
+      #textbox:hover,
+      #quag:hover {
+        animation: jump-shaking 0.83s 1;
+      }
+
+      #info {
+        text-align: center;
+        color: yellow;
+        filter: drop-shadow(0px 0px 1px black);
+        font-size: x-large;
+        margin: 0;
+      }
+
+      #aboutMe {
+        text-align: center;
+        color: white;
+        filter: drop-shadow(0px 0px 1px black);
+        width: 90%;
+      }
+
+      #congo:hover,
+      #arabio:hover,
+      #palestine:hover {
+        background-color: #ffd100;
+        cursor: url("Rainbow.cur"), auto;
+      }
+
+      #audio,
+      #quag {
+        filter: drop-shadow(0px 4px 6px #6c6db0);
+      }
+
+      #medias {
+        width: 48%;
+        display: flex;
+        justify-content: space-evenly;
+        margin-bottom: 2%;
+      }
+
+      .fab {
+        color: #00c4ff;
+        filter: drop-shadow(0px 0px 5px black);
+        font-size: xxx-large;
+      }
+
+      .fab:hover {
+        color: #008cf0;
+      }
+
+      #rainbow {
+        width: 400px;
+        height: 300px;
+        position: absolute;
+        top: 25px;
+        z-index: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-end;
+      }
+
+      .color {
+        width: 100%;
+        height: 100%;
+        border-radius: 50%;
+        margin-top: -1%;
+        position: inherit;
+        border: dashed #740074 2px;
+      }
+
+      #red {
+        background-color: #e8000b;
+        width: 100%;
+        height: 100%;
+      }
+
+      #orange {
+        background-color: orange;
+        width: 90%;
+        height: 95%;
+      }
+
+      #yellow {
+        background-color: yellow;
+        width: 80%;
+        height: 90%;
+      }
+
+      #green {
+        background-color: #9cd00a;
+        width: 70%;
+        height: 85%;
+      }
+
+      #blue {
+        background-color: #00beff;
+        width: 60%;
+        height: 80%;
+      }
+
+      #purple {
+        background-color: #a445ff;
+        width: 50%;
+        height: 75%;
+      }
+
+      #pink {
+        background-color: hotpink;
+        width: 40%;
+        height: 70%;
+      }
+
+      #cover {
+        background-color: hotpink;
+        position: absolute;
+        width: 400px;
+        height: 200px;
+        z-index: 0;
+        top: 190px;
+      }
+
+      #sasha {
+        position: fixed;
+        bottom: 10px;
+        right: 10px;
+        width: 100px;
+      }
+
+      @keyframes scrollBackground {
+        from {
+          background-position: 0 0;
+          /* Starting position */
+        }
+
+        to {
+          background-position: -100% 0;
+          /* Ending position (moves one full image width to the left) */
+        }
+      }
+
+      @keyframes jump-shaking {
+        0% {
+          transform: translateX(0)
+        }
+
+        25% {
+          transform: translateY(-9px)
+        }
+
+        35% {
+          transform: translateY(-9px) rotate(17deg)
+        }
+
+        55% {
+          transform: translateY(-9px) rotate(-17deg)
+        }
+
+        65% {
+          transform: translateY(-9px) rotate(17deg)
+        }
+
+        75% {
+          transform: translateY(-9px) rotate(-17deg)
+        }
+
+        100% {
+          transform: translateY(0) rotate(0)
+        }
+      }
+
+      @keyframes float {
+        0% {
+          box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.6);
+          transform: translatey(0px);
+        }
+
+        50% {
+          box-shadow: 0 25px 15px 0px rgba(0, 0, 0, 0.2);
+          transform: translatey(-20px);
+        }
+
+        100% {
+          box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.6);
+          transform: translatey(0px);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div id="holder">
+      <div id="content">
+        <div id="rainbow">
+          <div id="red" class="color"></div>
+          <div id="orange" class="color"></div>
+          <div id="yellow" class="color"></div>
+          <div id="green" class="color"></div>
+          <div id="blue" class="color"></div>
+          <div id="purple" class="color"></div>
+          <div id="pink" class="color"></div>
+        </div>
+        <div id="cover"></div>
+        <div id="icon"></div>
+        <div id="textbox">
+          <p id="greeting" class="chewy">"Hello, I'm Yoyo!!"</p>
+        </div>
+        <p id="info" class="chewy">(she/her) ★ black artist ★ lvl 21</p>
+        <p class="chewy" id="aboutMe">Welcome to my little corner of the internet! I'm mainly an OC digital artist who sometimes does crafts. I love Bratz, Pokémon, videogames, and most things animatied!</p>
+        <div id="medias">
+          <a href="https://www.instagram.com/yoyos.dreamz" target="_blank">
+            <i class='fab fa-instagram'></i>
+          </a>
+          <a href="https://www.youtube.com/@YoyosDreamz" target="_blank">
+            <i class='fab fa-youtube'></i>
+          </a>
+          <a href="https://www.pinterest.com/yysdrmz" target="_blank">
+            <i class='fab fa-pinterest-square'></i>
+        </div>
+        <div id="sjButtons">
+          <a href="https://oc-palestine.carrd.co" target="_blank">
+            <button id="palestine" class="chewy sjButton">Palestine Resources</button>
+          </a>
+          <a href="https://helpdrcongo.carrd.co" target="_blank">
+            <button id="congo" class="chewy sjButton">Congo Resources</button>
+          </a>
+          <a href="https://arab.org" target="_blank">
+            <button id="arabio" class="chewy sjButton">ARAB.ORG (GET THOSE CLICKS!!)</button>
+          </a>
+        </div>
+      </div>
+      <div id="audio">
+        <audio controls="" loop="">
+          <source src="sentimentalBoy.mp3">
+        </audio>
+      </div>
+    </div>
+    <img id="quag" src="https://img.pokemondb.net/sprites/black-white/anim/normal/quagsire-f.gif">
+    <img id="sasha" src="https://media.tenor.com/H0wxus7UdVcAAAAi/bratz-bratz-doll.gif">
+  </body>
+</html>
